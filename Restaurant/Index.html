@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding and responsive viewport setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Vista Restaurant</title>
+    <!-- Link to the shared CSS file for consistent styling across all pages -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main restaurant title — styled blue via h1 in style.css -->
+    <h1>Bella Vista Restaurant</h1>
+
+    <!-- Lucky Discount Spinner button — clicked by the user to try their luck -->
+    <!-- JavaScript grabs this via getElementById('spinBtn') -->
+    <button id="spinBtn">Try Your Luck - Spin for Discount!</button>
+
+    <!-- Empty paragraph where JavaScript injects the spin result text -->
+    <!-- JavaScript grabs this via getElementById('spinResult') -->
+    <p id="spinResult"></p>
+
+    <!-- Section headings styled red via h2 in style.css -->
+    <h2>Pizzas</h2>
+    <ul>
+        <li>
+            <!-- Clicking this link navigates to the Pizza Margherita detail page -->
+            <a href="pizza-margherita.html">Pizza Margherita</a> - EUR 12.50<br>
+            <small>Fresh tomatoes, mozzarella, basil</small>
+        </li>
+        <li>
+            <!-- No detail page for this item, so no link -->
+            Pizza Quattro Stagioni - EUR 16.00<br>
+            <small>Four seasons with different toppings per quarter</small>
+        </li>
+    </ul>
+
+    <h2>Pasta Dishes</h2>
+    <ul>
+        <li>
+            <!-- Clicking this link navigates to the Pasta Carbonara detail page -->
+            <a href="pasta-carbonara.html">Pasta Carbonara</a> - EUR 14.00<br>
+            <small>Creamy sauce with pancetta and parmesan</small>
+        </li>
+        <li>
+            <!-- No detail page for this item, so no link -->
+            Pasta Bolognese - EUR 13.50<br>
+            <small>Traditional meat sauce with herbs</small>
+        </li>
+    </ul>
+
+    <!-- Weekly Special button — JavaScript disables it after first click -->
+    <!-- JavaScript grabs this via getElementById('loadSpecialBtn') -->
+    <button id="loadSpecialBtn">Load Today's Special</button>
+
+    <!-- Empty div where JavaScript injects today's special content -->
+    <!-- Hidden by default via display:none in style.css, shown by JavaScript when loaded -->
+    <!-- JavaScript grabs this via getElementById('specialContainer') -->
+    <div id="specialContainer"></div>
+
+    <!-- Script loaded at the bottom so all HTML elements exist before JavaScript runs -->
+    <script src="script.js"></script>
+
+</body>
+</html>

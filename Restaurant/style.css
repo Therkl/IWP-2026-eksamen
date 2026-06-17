@@ -1,0 +1,44 @@
+/* =============================================
+   BASIC ELEMENT STYLING
+   These target HTML tags directly by their tag name
+   ============================================= */
+
+h1 {
+    color: blue; /* The restaurant title at the top of the page */
+}
+
+h2 {
+    color: red; /* Section headings like "Pizzas" and "Pasta Dishes" */
+}
+
+
+/* =============================================
+   SPINNER RESULT STYLING
+   These are CSS classes applied by JavaScript
+   using spinResult.className = "success-message" etc.
+   ============================================= */
+
+.success-message {
+    color: green;
+    font-weight: bold; /* Bold text to make the win stand out */
+}
+
+.fail-message {
+    color: gray; /* Subtle color for the losing message */
+}
+
+
+/* =============================================
+   WEEKLY SPECIAL CONTAINER
+   Targets the <div id="specialContainer"> in HTML
+   The # means we are selecting by ID
+   ============================================= */
+
+#specialContainer {
+    margin-top: 20px;      /* Space above the container */
+    padding: 15px;         /* Space inside the container around the text */
+    background-color: #f0f0f0; /* Light gray background to make it stand out */
+    border: 1px solid #ccc;    /* Thin gray border around the container */
+    display: none;         /* Hidden by default — JavaScript sets it to "block" when loaded */
+    width: 300px;          /* Fixed width so it doesn't stretch across the full page */
+}
