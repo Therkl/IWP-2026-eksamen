@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title><%= title %></title>
+    
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <h1 id="h1">Velkommen til <%= title %></h1>
+    </header>
+    
+    <main>
+        <h2>Teknologier vi skal mestre til eksamen:</h2>
+        
+        <img src="/hjaelpenfisk.png" alt="Et beskrivende billede af webudvikling" class="hero-billede">
+
+        <ul>
+            <% techArray.forEach(function(tech) { %>
+                <li><%= tech %></li>
+            <% }); %>
+        </ul>
+
+        <form action="/tilfoej" method="POST">
+            <label for="techInput">Tilføj en ny teknologi:</label>
+            
+            <input type="text" id="techInput" name="nyTeknologi" required>
+            <button type="submit">Tilføj</button>
+        </form>
+
+        <div style="margin-top: 30px; text-align: center;">
+            <a href="/nyside" class="nav-knap">Gå til detaljesiden</a>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,119 @@
+/* Grundlæggende reset og typografi */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    /* Flexbox til at centrere hovedindholdet på skærmen */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+#h1 {
+    color: #28a745;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+header {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #28a745;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+main {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px; /* Sørger for at kassen ikke bliver for bred */
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+li {
+    background: #e2e2e2;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+form {
+    /* Flexbox til at styre formularen */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Fejlbesked til vores JavaScript validering */
+#error-msg {
+    color: red;
+    font-size: 0.9em;
+    display: none; /* Skjult som standard */
+}
+.hero-billede {
+    /* NYT: Dette river billedet helt ud af sidens normale system */
+    position: absolute; 
+    left: 50px; /* Skubber det 50 pixels ind fra skærmens venstre kant */
+    top: 200px;  /* Skubber det 50 pixels ned fra skærmens top */
+
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #28a745;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+    /* NYT: Sikrer at formularen ikke også rykker op ved siden af billedet, men bliver nede i bunden */
+
+    /* Gør et almindeligt link til en knap for ny side */
+.nav-knap {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Blå farve for at skelne fra dine formular-knapper */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.nav-knap:hover {
+    background-color: #0056b3;
+}
