@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>CSS and JS</title>    
+</head>
+
+<body>
+    <style>
+        .blue {
+            color: blue;
+        }
+    </style>
+    <button id="blueButton">Click here to make paragraph text blue</button>
+    <p id="myParagraph">This is my paragraph</p>
+    <script>
+        let button = document.getElementById("blueButton");
+        let paragraph = document.getElementById("myParagraph");
+        button.addEventListener("mousedown", event => {
+            paragraph.classList.add("blue");
+        })
+        button.addEventListener("mouseup", event => {
+            paragraph.classList.remove("blue");
+        })
+    </script>
+</body>
+
+
+</html>

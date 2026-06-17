@@ -1,0 +1,17 @@
+#site-header, #site-footer {
+    background: gray;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+#main-content {
+    background: white;
+    padding: 40px;
+    min-height: 200px;
+}
+
+#site-footer {
+    padding: 15px;
+    text-align: center;
+}

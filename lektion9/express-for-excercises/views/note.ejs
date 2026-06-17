@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Note Details</title>
+  <link rel="stylesheet" href="/styles.css"> <!-- This is a quick fix which is not scalable -->
+</head>
+<body>
+
+  <a href="/">Go Back</a>
+
+  <h1><%= note.title %></h1>
+  <p><%= note.content %></p>
+
+  <a href="/note/edit/<%= note._id %>">Edit</a>
+
+</body>
+</html>

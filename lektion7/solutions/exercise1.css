@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+}
+
+#site-header {
+    background: darkblue;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+#main-content {
+    background: white;
+    padding: 40px;
+    min-height: 200px;
+    text-align: left;
+}
+
+#site-footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

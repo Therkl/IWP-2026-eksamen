@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Notes App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Notes App</h1>
+
+  <form method="POST" action="/add">
+    <input name="title" placeholder="Title" required />
+    <input name="content" placeholder="Content" required />
+    <button type="submit">Add Note</button>
+  </form>
+
+  <h2>All Notes</h2>
+
+<ul>
+  <% notes.forEach(note => { %>
+    <li>
+      <strong><%= note.title %></strong>: <%= note.content %>
+
+      <form method="POST" action="/delete/<%= note._id %>" style="display:inline;">
+        <button type="submit">Delete</button>
+      </form>
+    </li>
+  <% }) %>
+</ul>
+
+</body>
+</html>

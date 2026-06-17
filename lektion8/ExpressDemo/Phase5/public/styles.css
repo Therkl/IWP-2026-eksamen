@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 40px auto;
+  background: #f7f7f7;
+}
+
+h1 {
+  color: #333;
+}
+
+form {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+input {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box; /* For preventing input fields from "overflowing" the form */
+}
+
+button {
+  padding: 8px 12px;
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+li {
+  background: white;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+}
