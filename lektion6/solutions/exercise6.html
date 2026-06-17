@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>My Table</h1>
+
+  <!-- This is the table you should recreate using JavaScript -->
+  <table border="1">
+    <tr>
+      <td>A</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>D</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <div id="output"></div>
+
+  <script>
+    // Choose the DIV where the table should be placed
+    const output = document.querySelector("#output");
+
+    // Create table
+    const table = document.createElement("table");
+    table.border = "1";
+
+    // First row of table
+    const tr1 = document.createElement("tr");
+    const td11 = document.createElement("td");
+    td11.textContent = "A";
+
+    const td12 = document.createElement("td");
+    td12.textContent = "B";
+
+    tr1.appendChild(td11);
+    tr1.appendChild(td12);
+
+    // Second row of table
+    const tr2 = document.createElement("tr");
+    const td21 = document.createElement("td");
+    td21.textContent = "C";
+
+    const td22 = document.createElement("td");
+    td22.textContent = "D";
+
+    tr2.appendChild(td21);
+    tr2.appendChild(td22);
+
+    // Add the two rows to the table
+    table.appendChild(tr1);
+    table.appendChild(tr2);
+
+    // Add the table to the DIV tag "output" in the document
+    output.appendChild(table);
+
+  </script>
+</body>
+</html>

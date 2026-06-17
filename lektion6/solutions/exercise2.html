@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div>Students:</div>
+  <ul>
+    <li>Alice</li>
+    <li>Bob</li>
+	<li>Charlie</li>
+  </ul>
+  <script>
+    
+    // (a): Use the property .textContent to change "Students:" to "Student List".
+    let div = document.querySelector("div");
+    div.textContent = "Student List";
+
+    // (b): Similarly, change "Alice" to "Alex".
+    let ulFirst = document.querySelector("li");
+    ulFirst.textContent = "Alex";
+
+    // (c): Append " (Top Student)" to the last <li> element of the list.
+    let ulList = document.querySelectorAll("li");
+    let ulLast = ulList[ulList.length - 1];
+    ulLast.textContent = ulLast.textContent + " (Top Student)";
+
+  </script>
+</body>
+</html>

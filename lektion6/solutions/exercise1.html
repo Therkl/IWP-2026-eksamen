@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div>Students:</div>
+  <ul>
+    <li>Alice</li>
+    <li>Bob</li>
+	<li>Charlie</li>
+  </ul>
+  <script>
+
+    // (a): The tag name and content of the div element.
+    const div = document.querySelector("div");
+    console.log(div.nodeName + " -> " + div.textContent);
+
+    // (b): The tag name and content of the first li element.
+    const liFirst = document.querySelector("li");
+    console.log(liFirst.nodeName + " -> " + liFirst.textContent)    
+
+    // (c): The tag names and content of all li elements.
+    const liAll = document.querySelectorAll("li");
+    for(let liElement of liAll)
+        {
+            console.log(liElement.nodeName + " -> " + liElement.textContent);
+        }
+
+  </script>
+</body>
+</html>

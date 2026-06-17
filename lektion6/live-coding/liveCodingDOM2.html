@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Welcome</h1>
+    <p>This is a book.</p>
+    <p>This is not related.</p>
+    <p>Another book example.</p>
+    <script>
+        const body = document.body;
+        const paragraphs = body.getElementsByTagName("p");
+
+        for(let p of paragraphs)
+        {
+            console.log(p.textContent);   
+        }
+
+    </script>
+</body>
+</html>

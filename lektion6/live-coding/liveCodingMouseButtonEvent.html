@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Live Coding Mouse Button Demo</title>
+</head>
+<body>
+  <button id="myButton">Click me!</button>
+  <script>
+    const LEFT_BUTTON = 0;
+    const RIGHT_BUTTON = 2;
+
+    const button = document.getElementById("myButton");
+
+    // Add event listener to the button
+    button.addEventListener("mousedown", event => {
+        if(event.button == LEFT_BUTTON)
+        {
+            console.log("Left mouse button pressed.");
+        }
+        if(event.button == RIGHT_BUTTON)
+        {
+            console.log("Right mouse button pressed.");
+        }
+    })
+  </script>
+</body>
+</html>

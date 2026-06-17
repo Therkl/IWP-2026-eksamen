@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Balloon exercise from Eloquent JavaScript textbook</title>
+</head>
+<body>
+<p id="balloon">🎈</p>
+<script>
+    // Find the Balloon element
+    let balloon = document.getElementById("balloon");
+    
+    // Starting size in px
+    let size = 20;
+
+    balloon.style.fontSize = size + "px";
+
+    function handleKey(event)
+    {
+        // The purpose of the handleKey function is to change the value of size (increase or decrease)
+        if(event.key == "ArrowUp")
+            {
+                event.preventDefault();
+                size = size * 1.1; // Increase size by 10 %
+            }
+        else if(event.key == "ArrowDown")
+            {
+                event.preventDefault();
+                size = size * 0.9; // Decrease size by 10 %                
+            }
+        else
+            {
+                return;
+            }
+
+        // Explosion condition (choose 100 arbitrarily)
+        if(size > 100)
+        {
+            balloon.textContent = "💥";
+            window.removeEventListener("keydown", handleKey); // Remove the listener, so we can't inflate or deflate the explosion
+            return;
+        }
+        
+        balloon.style.fontSize = size + "px";
+    }
+
+    window.addEventListener("keydown", handleKey);
+
+
+</script>
+</body>
+</html>

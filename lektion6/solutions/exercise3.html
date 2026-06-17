@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div>Students:</div>
+  <ul>
+    <li>Alice</li>
+    <li>Bob</li>
+	<li>Charlie</li>
+  </ul>
+  <script>
+    // (a): Use the property .style.color to make all <li> text blue.
+    let liList = document.querySelectorAll("li");
+    for(let liElement of liList)
+    {
+        liElement.style.color = "blue";
+    }
+
+    // (b): Use the proporty .style.backgroundColor to set the <div> background color to lightgray.
+    let div = document.querySelector("div");
+    div.style.backgroundColor = "lightgray";
+
+    // (c): Use the property .style.fontWeight to make the first <li> bold.
+    let liFirst = liList[0];
+    liFirst.style.fontWeight = "bold";
+
+  </script>
+</body>
+</html>

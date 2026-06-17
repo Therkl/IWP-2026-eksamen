@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div>Students:</div>
+  <ul>
+    <li>Alice</li>
+    <li>Bob</li>
+	<li>Charlie</li>
+  </ul>
+  <script>
+
+    // (a): Use createElement and appendChild to add a new bullet (li) to the list (ul). The text of this bullet should be "Dave".
+    let ul = document.querySelector("ul");
+    let newLi = document.createElement("li");
+    newLi.textContent = "Dave";
+    ul.appendChild(newLi);
+
+    // (b): Use the .remove method to remove the bullet with the name "Bob" from the list.
+    const liList = document.querySelectorAll("li");
+    for(let li of liList)
+        {
+            if(li.textContent == "Bob")
+                {
+                    li.remove();
+                }   
+        }
+
+  </script>
+</body>
+</html>
